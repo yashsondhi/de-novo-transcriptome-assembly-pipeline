@@ -35,7 +35,7 @@ transcripts.main.transdecoder.pep   A soft link to the peptide files output by t
 
 Trinotate.sqlite		the initialized annotation database to be used with Trinotate
 
-You should continue with the Trinotate steps, using the transcripts.main.fa and transcripts.main.aa files.  DO NOT continue with the *main.renamed* files, as these will not import into the database correctly.
+You should continue with the Trinotate steps, using the transcripts.main.fa and transcripts.main.transdecoder.pep files.  DO NOT continue with the *main.renamed* files, as these will not import into the database correctly.
 These are all in the RunTrinotate.sh job.
 
 Trinotate manual: https://github.com/Trinotate/Trinotate.github.io/wiki
