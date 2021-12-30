@@ -3,10 +3,11 @@ de novo transcriptome assembly pipeline
 
 This pipeline combines multiple assemblers and multiple paramters using the combined de novo transcriptome assembly pipelines. For more information, go to https://ncgas.org/WelcomeBasket_Pipeline.php 
 
-This version of the branch has been modified by yash (yashsondhi@gmail.com) to run on the ufrc hipergator cluster with the approprate modules and version numbers as well as instructions spefiic to the slurm cluster. 
+
 Contact the NCGAS team (help@ncgas.org) if you have any questions.
 
-The pipeline is currently set up ONLY for TORQUE job handlers (SLURM is in progress and will be updated soon), with current set up being for IU's Carbonate Cluster. If you want to run this on your own hardware, we can help you convert the scripts to run on your machine. READ THE READMEs. There are READMEs in every folder.
+This version of the branch has been modified by yash (yashsondhi@gmail.com) to run on the ufrc hipergator cluster with the approprate modules and version numbers as well as instructions spefiic to the slurm cluster.  to run on SLURM
+
 
 ### Step 0: ###
 You will need to run the start up script to set up your email, project location, and designate if you are using single or double strands.  This can be done with the following command:
