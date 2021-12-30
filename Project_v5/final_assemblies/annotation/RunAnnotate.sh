@@ -10,6 +10,11 @@
 #SBATCH --mem=20gb
 #SBATCH --time=24:00:00 
 
+# installs trinotate 
+module load trinotate/3.0.1
+# Creates a soft link to Trinotate install directory
+ln -s ln -s $HPC_TRINOTATE_DIR/ tri
+
 ##Move to correct WD
 source ../../setup_files/path_set 
 cd $PWDHERE/final_assemblies/annotation
