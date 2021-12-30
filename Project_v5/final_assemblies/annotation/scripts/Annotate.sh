@@ -14,8 +14,12 @@ h) echo "################################################";
 esac
 done
 
+
+
 source ../../setup_files/path_set 
-export PATH=$PATH:$PWDHERE/software/Trinotate
+
+export PATH=$PATH:tri/admin/
+export PATH=$PATH:$HPC_TRINOTATE_DIR/admin/
 export PATH=$PATH:$PWDHERE/software/Hmmer
 
 cd $PWDHERE/final_assemblies/annotation
@@ -25,7 +29,8 @@ bash scripts/convert_aa.ba -t genes_to_transcripts.tsv -f transcripts.main.aa
 
 Build_Trinotate_Boilerplate_SQLite_db.pl Trinotate
 
-Trinotate Trinotate.sqlite init --gene_trans_map genes_to_transcripts.tsv --transcript_fasta transcripts.main.fa --transdecoder_pep transcripts.reformated.aa
+Trinotate Trinotate.sqlite init --gene_trans_map genes_to_transcripts.tsv --transcript_fasta transcripts.main.fa --transdecoder_pep transcripts.main.transdecoder.pep.fa
+
 gzip -d Pfam-A.hmm.gz
 hmmpress Pfam-A.hmm
 
