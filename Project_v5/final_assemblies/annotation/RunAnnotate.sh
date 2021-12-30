@@ -1,7 +1,6 @@
 #!/bin/bash 
 
 #SBATCH -J RunAnnotate                                 
-#SBATCH -p general
 #SBATCH -o Annotate_%j.log
 #SBATCH -e Annotate_%j.err 
 #SBATCH --mail-type=FAIL,BEGIN,END 
