@@ -19,6 +19,8 @@ cd $PWDHERE/final_assemblies/QC
 #the best (though there's no way to know unless you do it ^_^).  Also, 
 #different projects require a focus on different aspects, so we give you this 
 #table to determine what your best option is for your needs! Edited by Yash sondhi to incorporate changes with newer versions ov evigenes
+# This script has been edited to run on the uf slurm cluster, but may can be used as a guide to modify the main Run_QC.sh script.
+
 
 #1) Make script to symlink all assemblies here
 for f in ../../TransAbyss/*final.fa; do ln -s $f ${f#../../TransAbyss/}; done
