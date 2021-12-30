@@ -7,8 +7,8 @@
 #SBATCH --mail-user=
 #SBATCH --nodes=1 
 #SBATCH --ntasks-per-node=1
-#SBATCH --mem=10gb
-#SBATCH --time=01:00:00 
+#SBATCH --mem=20gb
+#SBATCH --time=24:00:00 
 
 ##Move to correct WD
 source ../../setup_files/path_set 
