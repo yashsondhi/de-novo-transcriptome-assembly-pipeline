@@ -1,4 +1,4 @@
-The QC script will do the following: 
+The QC_edit script will do the following: 
 
 1) Make script to symlink all assemblies here
 2) Make script to run BUSCO on all
