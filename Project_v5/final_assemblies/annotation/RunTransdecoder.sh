@@ -4,7 +4,7 @@
 #SBATCH -o Transdecoder_%j.log
 #SBATCH -e Transdecoder_%j.err 
 #SBATCH --mail-type=FAIL,BEGIN,END 
-#SBATCH --mail-user=yashsondhi@gmail.com
+#SBATCH --mail-user=
 #SBATCH --nodes=1 
 #SBATCH --cpus-per-task=16
 #SBATCH --ntasks-per-node=1
