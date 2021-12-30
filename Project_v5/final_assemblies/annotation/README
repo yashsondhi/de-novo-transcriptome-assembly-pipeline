@@ -10,6 +10,8 @@ RunTransdecoder.sh
 RunTrinotate.sh
 RunAnnotate
 
+Run Transdecoder.sh on the transcripts.main.fa
+
 Create sqlite database following instructions on the trinotate page
 
 This is how you will know the previous step was completed fully.  Edit the RunAnnotate.sh file to have the NAME_PREFIX changed to something sane:
