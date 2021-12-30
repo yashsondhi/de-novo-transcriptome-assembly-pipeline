@@ -1,10 +1,9 @@
 #!/bin/bash 
 
 #SBATCH -J RunTrinityNorm                                 
-#SBATCH -p general
 #SBATCH -o TrinityNorm_%j.log
 #SBATCH -e TrinityNorm_%j.err 
-#SBATCH --mail-type=FAIL
+#SBATCH --mail-type=BEGIN,END,FAIL
 #SBATCH --mail-user=
 #SBATCH --nodes=1 
 #SBATCH --ntasks-per-node=16
@@ -13,7 +12,8 @@
 
 source ../setup_files/path_set 
 
-export PATH=$PATH:$PWDHERE/software/Trinity
+module load trinity/2.12.0
+#export PATH=$PATH:$PWDHERE/software/Trinity
 
 cd $PWDHERE/input_files
 
