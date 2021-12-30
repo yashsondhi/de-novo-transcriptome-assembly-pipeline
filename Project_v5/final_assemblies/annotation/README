@@ -31,6 +31,7 @@ transcripts.main.renamed.fa	  the subset above, but with the final gene name add
 transcripts.aa  		          the original okay and okalt files concatonated together, in amino acid form
 transcripts.main.aa  		      the subset of transcripts that represent UNIQUE main and alternate forms of genes, in amino acid form
 transcripts.main.renamed.aa  	the subset above, but with the final gene name added to the beginning of the header 
+transcripts.main.transdecoder.pep   A soft link to the peptide files output by transdecoder 
 
 Trinotate.sqlite		the initialized annotation database to be used with Trinotate
 
