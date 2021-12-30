@@ -29,6 +29,9 @@ bash scripts/convert_aa.ba -t genes_to_transcripts.tsv -f transcripts.main.aa
 
 Build_Trinotate_Boilerplate_SQLite_db.pl Trinotate
 
+# run Transdecoder
+bash RunTransdecoder.sh
+
 Trinotate Trinotate.sqlite init --gene_trans_map genes_to_transcripts.tsv --transcript_fasta transcripts.main.fa --transdecoder_pep transcripts.main.transdecoder.pep.fa
 
 gzip -d Pfam-A.hmm.gz
