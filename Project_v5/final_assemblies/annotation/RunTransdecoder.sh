@@ -14,6 +14,7 @@
 ##Move to correct WD
 module load transdecoder/5.5.0
 source ../../setup_files/path_set 
+mkdir transdecoder
 cd $PWDHERE/final_assemblies/annotation/transdecoder
 
 TransDecoder.LongOrfs -t ../transcripts.main.fa
