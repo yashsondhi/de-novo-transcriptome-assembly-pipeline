@@ -4,7 +4,7 @@
 #SBATCH -o Trinotate_%j.log
 #SBATCH -e Trinotate_%j.err 
 #SBATCH --mail-type=FAIL,BEGIN,END 
-#SBATCH --mail-user=yashsondhi@gmail.com
+#SBATCH --mail-user=
 #SBATCH --nodes=1 
 #SBATCH --ntasks-per-node=5
 #SBATCH --mem=100gb
