@@ -8,9 +8,14 @@
 #SBATCH --mail-user=
 #SBATCH --nodes=1 
 #SBATCH --ntasks-per-node=3
-#SBATCH --cpus-per-task=1
+#SBATCH --cpus-per-task=16
 #SBATCH --mem=200gb
-#SBATCH --time=03:00:00 
+#SBATCH --time=24:00:00 
+
+# load modules
+module load velvet/1.2.10
+module load oases/0.2.08
+
 
 ##Move to correct WD
 source ../setup_files/path_set 
