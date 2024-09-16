@@ -1,7 +1,6 @@
 #!/bin/bash 
 
 #SBATCH -J RunSOAP1                                     
-#SBATCH -p general
 #SBATCH -o SOAP1_%j.log
 #SBATCH -e SOAP1_%j.err 
 #SBATCH --mail-type=FAIL,BEGIN,END
@@ -9,8 +8,12 @@
 #SBATCH --nodes=1 
 #SBATCH --ntasks-per-node=3
 #SBATCH --cpus-per-task=2
-#SBATCH --mem=128gb
+#SBATCH --mem=200gb
 #SBATCH --time=24:00:00
+module load soapdenovo-trans/1.03
+
+
+
 
 ##Move to correct WD
 source ../setup_files/path_set

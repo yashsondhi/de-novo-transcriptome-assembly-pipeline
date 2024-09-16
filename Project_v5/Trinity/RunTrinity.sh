@@ -18,8 +18,15 @@ export PATH=$PATH:$PWDHERE/software/Trinity
 module load trinity/2.12.0
 
 
+
+
+Trinity --max_memory 200G --seqType fq  --single $reads --CPU 6 --full_cleanup --output trinity_out_dir 
+cp trinity_out_dir.Trinity.fasta ../final_assemblies/Trinity.fa
+
 export reads=$PWDHERE/input_files/reads-norm.fq
 
-Trinity --max_memory 200G --seqType fq  --single $reads --CPU 16 --full_cleanup --output $TMPDIR/trinity_out_dir 
+#If running on clsuter use scratch directory as an example below
 
-cp $TMPDIR/trinity_out_dir.Trinity.fasta ../final_assemblies/Trinity.fa
+#Trinity --max_memory 200G --seqType fq  --single $reads --CPU 16 --full_cleanup --output $TMPDIR/trinity_out_dir 
+
+#cp $TMPDIR/trinity_out_dir.Trinity.fasta ../final_assemblies/Trinity.fa

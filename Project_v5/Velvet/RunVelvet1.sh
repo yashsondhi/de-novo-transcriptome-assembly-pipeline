@@ -1,7 +1,6 @@
 #!/bin/bash 
 
 #SBATCH -J RunVelvet1                                   
-#SBATCH -p general
 #SBATCH -o Velvet1_%j.log
 #SBATCH -e Velvet1_%j.err 
 #SBATCH --mail-type=FAIL,BEGIN,END 
@@ -16,6 +15,7 @@
 source ../setup_files/path_set 
 cd $PWDHERE/Velvet
 
+module load velvet/1.2.10
 export PATH=$PATH:$PWDHERE/software/Velvet
 
 #input define

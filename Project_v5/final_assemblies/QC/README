@@ -1,4 +1,5 @@
 The QC script will do the following: 
+# Use the Run_QC_edit.sh script as a reference for modifying the slurm script
 
 1) Make script to symlink all assemblies here
 2) Make script to run BUSCO on all

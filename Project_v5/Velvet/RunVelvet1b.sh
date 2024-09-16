@@ -1,7 +1,6 @@
 #!/bin/bash 
 
 #SBATCH -J RunVelvet1b                                   
-#SBATCH -p general
 #SBATCH -o Velvet1b_%j.log
 #SBATCH -e Velvet1b_%j.err 
 #SBATCH --mail-type=FAIL,BEGIN,END 
@@ -11,6 +10,8 @@
 #SBATCH --cpus-per-task=1
 #SBATCH --mem=200gb
 #SBATCH --time=03:00:00 
+
+module load velvet/1.2.10
 
 ##Move to correct WD
 source ../setup_files/path_set 

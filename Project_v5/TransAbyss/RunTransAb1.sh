@@ -1,16 +1,22 @@
 #!/bin/bash 
 
 #SBATCH -J TransAb1                                    
-#SBATCH -p general
 #SBATCH -o TransAb1_%j.log
 #SBATCH -e TransAb1_%j.err 
 #SBATCH --mail-type=FAIL,BEGIN,END
 #SBATCH --mail-user=
 #SBATCH --nodes=1 
 #SBATCH --ntasks-per-node=3
-#SBATCH --cpus-per-task=2
-#SBATCH --mem=100gb
-#SBATCH --time=12:00:00 
+#SBATCH --cpus-per-task=12
+#SBATCH --mem=150gb
+#SBATCH --time=48:00:00 
+
+#set wd
+module load transabyss/2.0.1
+module load igraph/python/0.7.1
+module load blat
+module load transabyss/2.0.1
+
 
 #set wd
 source ../setup_files/path_set 

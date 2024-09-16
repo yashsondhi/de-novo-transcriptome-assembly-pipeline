@@ -6,6 +6,13 @@ scripts/
 transcripts.aa  
 transcripts.fa  
 Trinotate.sqlite
+RunTransdecoder.sh
+RunTrinotate.sh
+RunAnnotate
+
+Run Transdecoder.sh on the transcripts.main.fa
+
+Create sqlite database following instructions on the trinotate page
 
 This is how you will know the previous step was completed fully.  Edit the RunAnnotate.sh file to have the NAME_PREFIX changed to something sane:
 
@@ -26,10 +33,11 @@ transcripts.main.renamed.fa	  the subset above, but with the final gene name add
 transcripts.aa  		          the original okay and okalt files concatonated together, in amino acid form
 transcripts.main.aa  		      the subset of transcripts that represent UNIQUE main and alternate forms of genes, in amino acid form
 transcripts.main.renamed.aa  	the subset above, but with the final gene name added to the beginning of the header 
+transcripts.main.transdecoder.pep   A soft link to the peptide files output by transdecoder 
 
 Trinotate.sqlite		the initialized annotation database to be used with Trinotate
 
-You should continue with the Trinotate steps, using the transcripts.main.fa and transcripts.main.aa files.  DO NOT continue with the *main.renamed* files, as these will not import into the database correctly.
+You should continue with the Trinotate steps, using the transcripts.main.fa and transcripts.main.transdecoder.pep files.  DO NOT continue with the *main.renamed* files, as these will not import into the database correctly.
 These are all in the RunTrinotate.sh job.
 
 Trinotate manual: https://github.com/Trinotate/Trinotate.github.io/wiki
